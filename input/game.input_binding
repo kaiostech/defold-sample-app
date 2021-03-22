@@ -1,0 +1,60 @@
+key_trigger {
+  input: KEY_SPACE
+  action: "fire"
+}
+key_trigger {
+  input: KEY_LEFT
+  action: "left"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "right"
+}
+key_trigger {
+  input: KEY_ESC
+  action: "quit"
+}
+key_trigger {
+  input: KEY_ENTER
+  action: "fire"
+}
+key_trigger {
+  input: KEY_4
+  action: "left"
+}
+key_trigger {
+  input: KEY_6
+  action: "right"
+}
+key_trigger {
+  input: KEY_5
+  action: "fire"
+}
+key_trigger {
+  input: KEY_BACKSPACE
+  action: "quit"
+}
+key_trigger {
+  input: KEY_3
+  action: "restart"
+}
+key_trigger {
+  input: KEY_ENTER
+  action: "press_play"
+}
+key_trigger {
+  input: KEY_5
+  action: "press_play"
+}
+key_trigger {
+  input: KEY_1
+  action: "back_to_menu"
+}
+key_trigger {
+  input: KEY_3
+  action: "tutorial"
+}
+key_trigger {
+  input: KEY_1
+  action: "back_to_menu_tutorial"
+}

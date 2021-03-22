@@ -1,0 +1,46 @@
+local function load_menu(self)
+	msg.post("#menu", "load")
+end
+
+local function unload_menu(self)
+	msg.post("#menu", "unload")
+end
+
+local function load_game(self)
+	msg.post("#game", "load")
+end
+
+local function unload_game(self)
+	msg.post("#game", "unload")
+end
+
+local function load_tutorial(self)
+	msg.post("#tutorial", "load")
+end
+
+local function unload_tutorial(self)
+	msg.post("#tutorial", "unload")
+end
+
+function init(self)
+	load_menu(self)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("proxy_loaded") then
+		msg.post(sender, "enable")
+		msg.post(".", "acquire_input_focus")
+	elseif message_id == hash("start_game") then
+		unload_menu(self)
+		load_game(self)
+	elseif message_id == hash("tutorial") then
+		unload_menu(self)
+		load_tutorial(self)
+	elseif message_id == hash("back_to_menu") then
+		unload_game(self)
+		load_menu(self)
+	elseif message_id == hash("back_to_menu_tutorial") then
+		unload_tutorial(self)
+		load_menu(self)
+	end
+end

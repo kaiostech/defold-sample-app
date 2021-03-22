@@ -1,0 +1,13 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("back_to_menu_tutorial") then
+		msg.post("controller:/go", "back_to_menu_tutorial")
+	elseif action_id == hash("quit") then
+		if html5 then
+			html5.run("window.close()") 
+		end
+	end
+end

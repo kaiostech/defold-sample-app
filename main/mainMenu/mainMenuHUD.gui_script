@@ -1,0 +1,30 @@
+function init(self)
+	local n1 = gui.get_node("btn_play")
+	gui.set_enabled(n1, false)
+end
+
+local function play(self)
+	if self.play then
+		local n1 = gui.get_node("btn_play")
+		gui.animate(n1, "color.w", 1, gui.EASING_INOUTQUINT, 0.8, 0, play, gui.PLAYBACK_ONCE_PINGPONG)
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("btn_play") then
+		-- msg.post("#bg_sound", "play_sound")
+		
+		local n = gui.get_node("btn_play")
+		gui.set_enabled(n, true)
+		
+		gui.set_color(n, vmath.vector4(1, 1, 1, 0))
+		
+		self.play = true
+		play(self)
+	elseif message_id == hash("menu_hide") then
+		local n = gui.get_node("title")
+		local n1 = gui.get_node("btn_play")
+		gui.set_enabled(n, false)
+		gui.set_enabled(n1, false)
+	end
+end

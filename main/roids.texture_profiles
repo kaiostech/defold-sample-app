@@ -1,0 +1,20 @@
+path_settings {
+  path: "/assets/*.atlas"
+  profile: "gui_atlas"
+}
+path_settings {
+  path: "/**/*.atlas"
+  profile: "gui_atlas"
+}
+profiles {
+  name: "gui_atlas"
+  platforms {
+    os: OS_ID_WEB
+    formats {
+      format: TEXTURE_FORMAT_RGBA
+      compression_level: HIGH
+      compression_type: COMPRESSION_TYPE_WEBP_LOSSY
+    }
+    mipmaps: false
+  }
+}

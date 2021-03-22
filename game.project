@@ -1,0 +1,46 @@
+[project]
+title = Defold Sample Game
+version = 1.0.0
+publisher = KaiOS
+developer = Peter Wu
+dependencies = 
+
+[bootstrap]
+main_collection = /main/controller/controller.collectionc
+render = /render/roids_test.renderc
+
+[input]
+game_binding = /input/game.input_bindingc
+
+[display]
+width = 240
+height = 320
+fullscreen = 0
+high_dpi = 0
+dynamic_orientation = 0
+
+[script]
+shared_state = 1
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+texture_profiles = /main/roids.texture_profiles
+
+[html5]
+show_fullscreen_button = 0
+show_made_with_defold = 0
+scale_mode = fit
+htmlfile = /builtins/manifests/web/engine_template.html
+cssfile = /builtins/manifests/web/light_theme.css
+heap_size = 32
+
+[render]
+clear_color_blue = 0.0
+
+[tilemap]
+max_tile_count = 1024
+
+[library]
+include_dirs = kaiads
+

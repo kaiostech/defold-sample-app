@@ -1,0 +1,26 @@
+{
+    "version": "1.0.0",
+    "name": "Defold Sample App",
+    "description": "This is a sample app made by the KaiOS in collaboration with Defold team. Developers can use this to learn.",
+    "type": "web",
+    "launch_path": "/index.html",
+    "fullscreen": "true",
+    "icons": {
+        "56": "/assets/icons/kaios_56.png",
+        "112": "/assets/icons/kaios_112.png"
+    },
+    "developer": {
+        "name": "KaiOS",
+        "url": "https://kaiostech.com/"
+    },
+    "locales": {
+        "en-US": {
+            "name": "Defold Sample App",
+            "subtitle": "Defold Sample App",
+            "description": "This is a sample app made by the KaiOS in collaboration with Defold team. Developers can use this to learn."
+        }
+    },
+    "categories": ["games"],
+    "default_locale": "en-US",
+    "precompile": ["DefoldSampleGame_asmjs.js", "dmloader.js"]
+}

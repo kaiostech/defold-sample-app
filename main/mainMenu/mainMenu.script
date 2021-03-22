@@ -1,0 +1,49 @@
+local json = require "kaiads.json"
+
+local function on_kaiads_event(self, event, code)
+	if event == kaiads.PRELOAD_OK then
+		print("KaiAds has successfully preloaded an ad")
+		kaiads.show()
+	elseif event == kaiads.AD_DISPLAY then
+		print("KaiAds is showing an ad")
+	elseif event == kaiads.AD_CLOSE then
+		print("The user closed the ad!")
+	elseif event == kaiads.AD_CLICK then
+		print("The user clicked on the ad!")
+	else
+		print("Something went wrong", code)
+	end
+end
+
+function init(self)
+	if kaiads then
+		kaiads.set_listener(on_kaiads_event)
+		kaiads.init("[YOUR PUBLISHER ID]")
+		local fullscreen_config = {
+			app = "defoldsampleapp",
+			slot = "mymainMenu",
+		}
+		kaiads.preload(json.encode(fullscreen_config))
+	end
+	
+	msg.post(".", "acquire_input_focus")
+	msg.post("#", "menu")
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("menu") then
+		msg.post("ui#gui", "btn_play")
+	end
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("press_play") then
+		msg.post('controller:/go', "start_game")
+	elseif action_id == hash("tutorial") then
+		msg.post('controller:/go', "tutorial")
+	elseif action_id == hash("quit") then
+		if html5 then
+			html5.run("window.close()") 
+		end
+	end
+end
