@@ -1,6 +1,6 @@
 # Defold sample game by KaiOS
 
-Welcome to the ["Roids" sample game](https://github.com/defold/sample-roids) which modified by KaiOS. This is a very simple "Asteroids" clone where you turn the ship left and right key on your KaiOS device and fire at incoming meteors with <kbd>Enter</kbd> or <kbd>Num 5</kdb>.
+Welcome to the ["Roids" sample game](https://github.com/defold/sample-roids) which has been created for KaiOS. This is a very simple "Asteroids" clone where you turn the ship left and right key on your KaiOS device and fire at incoming meteors with <kbd>Enter</kbd> or <kbd>Num 5</kdb>.
 
 [Play the game!](defold://build)
 
@@ -8,7 +8,7 @@ Welcome to the ["Roids" sample game](https://github.com/defold/sample-roids) whi
 
 
 ## Features
-- Support KaiOS 1.0 or above
+- Supports KaiOS 1.0 or above
 - KaiAds Ready
 
 ## Control key
@@ -31,7 +31,7 @@ This is how the project is laid out:
 
 ### Main Components
 
-* ["controller.collection](defold://open?path=/main/controller/controller.collection) is the collection proxy component which used to load and unload the main menu and game "worlds". The script is written in ["controller.script](defold://open?path=/main/controller/controller.script).
+* ["controller.collection](defold://open?path=/main/controller/controller.collection) is the collection proxy component which is used to load and unload the main menu and game "worlds". The script is written in ["controller.script](defold://open?path=/main/controller/controller.script).
 * ["main.collection"](defold://open?path=/main/main/main.collection) is loaded after the main menu. It ties every game components together.
 * The flow of the game is controlled from ["main.script"](defold://open?path=/main/main/main.script). It keeps track of lives and score and sends timed messages to the rest of the game to set things up properly.
 * ["mainMenu.collection](defold://open?path=/main/mainMenu/mainMenu.collection) is loaded at game start. The script is written in ["mainMenu.script"](defold://open?path=/main/main/main.script).
@@ -48,13 +48,13 @@ This is how the project is laid out:
 
 ### Defold Documentations
 
-Check out [the documentation pages](https://defold.com/learn) for more examples, tutorials, manuals and API docs. If you run into trouble, help is available in [our forum](https://forum.defold.com).
+Check out [the documentation pages](https://defold.com/learn) for more examples, tutorials, manuals and API docs. If you run into trouble, help is available in [the Defold forum](https://forum.defold.com).
 
 ### KaiOS Documentation
 
-Please acknowledge that there is a "kaios-assets" folder included a "manifest.webapp" and "assets" folder for icons. For more info: [Manifest](https://developer.kaiostech.com/getting-started/main-concepts/manifest).
+Please be aware that there is a "kaios-assets" folder which includes a "manifest.webapp" and "assets" folder for icons. For more info: [Manifest](https://developer.kaiostech.com/getting-started/main-concepts/manifest). These files are placed next to the index.html when bundling for HTML5 builds as the "kaios-assets" is listed as a [Bundle Resources](https://defold.com/manuals/project-settings/#bundle-resources) folder.
 
-If you have trouble about the technical side from KaiOS such as app design guideline or app running, you can check out our developer portal for [more information](https://developer.kaiostech.com/). To integrate the KaiAds into your application, please browse our [KaiAds](https://kaiads.com/) website.
+If you have trouble with the technical side of KaiOS such as app design guidelines or running the app, you can check out the KaiOS developer portal for [more information](https://developer.kaiostech.com/). To integrate the KaiAds into your application, please browse our [KaiAds](https://kaiads.com/) website.
 
 Moreover, you can submit your application to our submission portal. For more information, please check out our [submission guideline](https://developer.kaiostech.com/submit-to-kaistore).
 
