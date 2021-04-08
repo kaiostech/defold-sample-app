@@ -4,6 +4,7 @@ version = 1.0.0
 publisher = KaiOS
 developer = Peter Wu
 dependencies = 
+bundle_resources = /kaios-assets
 
 [bootstrap]
 main_collection = /main/controller/controller.collectionc
