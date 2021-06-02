@@ -105,8 +105,8 @@ nodes {
   type: TYPE_TEXT
   blend_mode: BLEND_MODE_ALPHA
   text: "Back -> Exit Game\n"
-  "1 -> Back to Main Menu\n"
-  "3 -> Restart Game\n"
+  "Softkey Left -> Back to Main Menu\n"
+  "Softkey Right -> Restart Game\n"
   "Enter or Num 5 -> Start Game\n"
   "Left or 4 -> Turn left\n"
   "Right or 6 -> Turn Right"
