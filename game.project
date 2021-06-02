@@ -3,8 +3,8 @@ title = Defold Sample Game
 version = 1.0.0
 publisher = KaiOS
 developer = Peter Wu
-dependencies = 
 bundle_resources = /kaios-assets
+dependencies#0 = https://github.com/defold/extension-kaiads/archive/refs/tags/1.1.2.zip
 
 [bootstrap]
 main_collection = /main/controller/controller.collectionc
@@ -43,5 +43,5 @@ clear_color_blue = 0.0
 max_tile_count = 1024
 
 [library]
-include_dirs = kaiads
+include_dirs = kaios
 

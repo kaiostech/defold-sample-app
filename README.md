@@ -14,13 +14,13 @@ Welcome to the ["Roids" sample game](https://github.com/defold/sample-roids) whi
 ## Control key
 
 ### Menu
-*1 -> Back to Main Menu*  
-*3 -> Instruction Page*   
+*Softkey Left -> Back to Main Menu*  
+*Softkey Right -> Instruction Page*   
 
 ### Game
 *Back -> Exit Game*  
-*1 -> Back to Main Menu*  
-*3 -> Restart Game*  
+*Softkey Left -> Back to Main Menu*  
+*Softkey Right -> Restart Game*  
 *Enter or Num 5 -> Start Game*  
 *Left or 4 -> Turn Left*  
 *Right or 6 -> Turn Right*
@@ -49,6 +49,8 @@ This is how the project is laid out:
 ### Defold Documentations
 
 Check out [the documentation pages](https://defold.com/learn) for more examples, tutorials, manuals and API docs. If you run into trouble, help is available in [the Defold forum](https://forum.defold.com).
+
+Thanks to the Defold Team. The extension for [KaiAds](https://github.com/defold/extension-kaiads) and [Softkey with Play Sound](https://github.com/defold/extension-kaios)feature are available to integrate in your application. Feel free to check it out!
 
 ### KaiOS Documentation
 

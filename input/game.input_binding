@@ -35,7 +35,7 @@ key_trigger {
   action: "quit"
 }
 key_trigger {
-  input: KEY_3
+  input: KEY_F2
   action: "restart"
 }
 key_trigger {
@@ -47,14 +47,14 @@ key_trigger {
   action: "press_play"
 }
 key_trigger {
-  input: KEY_1
+  input: KEY_F1
   action: "back_to_menu"
 }
 key_trigger {
-  input: KEY_3
+  input: KEY_F2
   action: "tutorial"
 }
 key_trigger {
-  input: KEY_1
+  input: KEY_F1
   action: "back_to_menu_tutorial"
 }
