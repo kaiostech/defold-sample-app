@@ -10,6 +10,7 @@ Welcome to the ["Roids" sample game](https://github.com/defold/sample-roids) whi
 ## Features
 - Supports KaiOS 1.0 or above
 - KaiAds Ready
+- Softkey Ready
 
 ## Control key
 
@@ -50,7 +51,7 @@ This is how the project is laid out:
 
 Check out [the documentation pages](https://defold.com/learn) for more examples, tutorials, manuals and API docs. If you run into trouble, help is available in [the Defold forum](https://forum.defold.com).
 
-Thanks to the Defold Team. The extension for [KaiAds](https://github.com/defold/extension-kaiads) and [Softkey with Play Sound](https://github.com/defold/extension-kaios)feature are available to integrate in your application. Feel free to check it out!
+Thanks to the Defold Team. The extension for [KaiAds](https://github.com/defold/extension-kaiads) and [Softkey with Play Sound](https://github.com/defold/extension-kaios) feature are available to integrate in your application. Feel free to check it out!
 
 ### KaiOS Documentation
 
