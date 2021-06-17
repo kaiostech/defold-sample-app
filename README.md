@@ -55,11 +55,11 @@ Thanks to the Defold Team. The extension for [KaiAds](https://github.com/defold/
 
 ### KaiOS Documentation
 
-Please be aware that there is a "kaios-assets" folder which includes a "manifest.webapp" and "assets" folder for icons. For more info: [Manifest](https://developer.kaiostech.com/getting-started/main-concepts/manifest). These files are placed next to the index.html when bundling for HTML5 builds as the "kaios-assets" is listed as a [Bundle Resources](https://defold.com/manuals/project-settings/#bundle-resources) folder.
+Please be aware that there is a "kaios-assets" folder which includes a "manifest.webapp" and "assets" folder for icons. For more info: [Manifest](https://developer.kaiostech.com/docs/02.getting-started/02.main-concepts/manifest). These files are placed next to the index.html when bundling for HTML5 builds as the "kaios-assets" is listed as a [Bundle Resources](https://defold.com/manuals/project-settings/#bundle-resources) folder.
 
 If you have trouble with the technical side of KaiOS such as app design guidelines or running the app, you can check out the KaiOS developer portal for [more information](https://developer.kaiostech.com/). To integrate the KaiAds into your application, please browse our [KaiAds](https://kaiads.com/) website.
 
-Moreover, you can submit your application to our submission portal. For more information, please check out our [submission guideline](https://developer.kaiostech.com/submit-to-kaistore).
+Moreover, you can submit your application to our submission portal. For more information, please check out our [submission guideline](https://developer.kaiostech.com/docs/07.submit-to-kaistore/kaistore/).
 
 Guideline of migrating from Defold game to KaiOS: TBC
 

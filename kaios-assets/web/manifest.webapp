@@ -22,5 +22,9 @@
     },
     "categories": ["games"],
     "default_locale": "en-US",
-    "precompile": ["DefoldSampleGame_asmjs.js", "dmloader.js"]
+    "precompile": ["DefoldSampleGame_asmjs.js", "dmloader.js"],
+	"permissions": {
+		"mobiledata": {},
+		"wifidata": {}
+	}
 }
